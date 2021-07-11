@@ -1,0 +1,1 @@
+/home/mohzap/catkin_ws/devel/.private/mpc_handler/share/mpc_handler/cmake/mpc_handlerConfig.cmake

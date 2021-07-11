@@ -1,0 +1,1 @@
+/usr/bin/cmake -S/home/mohzap/catkin_ws/src/mpc0 -B/home/mohzap/catkin_ws/build/mpc0 --check-build-system CMakeFiles/Makefile.cmake 0

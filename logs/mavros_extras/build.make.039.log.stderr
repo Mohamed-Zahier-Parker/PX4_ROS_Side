@@ -1,0 +1,76 @@
+In file included from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/utils.h:22[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h:30[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:25[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:[m[K In function ‘[01m[Kbool mavros_msgs::mavlink::convert(const Mavlink&, mavlink::mavlink_message_t&)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:74:63:[m[K [01;35m[Kwarning: [m[Ktaking address of packed member of ‘[01m[Kmavlink::__mavlink_message[m[K’ may result in an unaligned pointer value [[01;35m[K-Waddress-of-packed-member[m[K]
+   74 |  std::copy(rmsg.payload64.begin(), rmsg.payload64.end(), [01;35m[Kmmsg.payload64[m[K);
+      |                                                          [01;35m[K~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/utils.h:22[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h:30[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:25[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:[m[K In function ‘[01m[Kbool mavros_msgs::mavlink::convert(const mavlink_message_t&, mavros_msgs::Mavlink&, uint8_t)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:108:62:[m[K [01;35m[Kwarning: [m[Ktaking address of packed member of ‘[01m[Kmavlink::__mavlink_message[m[K’ may result in an unaligned pointer value [[01;35m[K-Waddress-of-packed-member[m[K]
+  108 |  rmsg.payload64 = mavros_msgs::Mavlink::_payload64_type([01;35m[Kmmsg.payload64[m[K, mmsg.payload64 + payload64_len);
+      |                                                         [01;35m[K~~~~~^~~~~~~~~[m[K
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:[m[K In member function ‘[01m[Kvoid mavros::extra_plugins::MPCInputsPlugin::handle_mpc_inputs(const mavlink_message_t*, mavlink::common::msg::MPC_INPUTS&)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:49:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kmavros_msgs::MPC_Inputs_<std::allocator<void> >::_mpc_ref_in_type[m[K’ {aka ‘[01m[Kboost::array<float, 38>[m[K’} and ‘[01m[Kstd::array<float, 38>[m[K’)
+   49 |   ros_msg->mpc_ref_in = mpc_inputs.[01;31m[Kmpc_ref_in[m[K;
+      |                                    [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/message.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/diagnostic_updater/diagnostic_updater.h:42[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:23[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/usr/include/boost/array.hpp:172:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T2> boost::array<T, N>& boost::array<T, N>::operator=(const boost::array<T2, N>&) [with T2 = T2; T = float; long unsigned int N = 38][m[K’
+  172 |         array<T,N>& [01;36m[Koperator[m[K= (const array<T2,N>& rhs) {
+      |                     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/array.hpp:172:21:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:49:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<float, 38>[m[K’ is not derived from ‘[01m[Kconst boost::array<T2, 38>[m[K’
+   49 |   ros_msg->mpc_ref_in = mpc_inputs.[01;36m[Kmpc_ref_in[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/message.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/diagnostic_updater/diagnostic_updater.h:42[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:23[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr boost::array<float, 38>& boost::array<float, 38>::operator=(const boost::array<float, 38>&)[m[K’
+   61 |     class [01;36m[Karray[m[K {
+      |           [01;36m[K^~~~~[m[K
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::array<float, 38>[m[K’ to ‘[01m[Kconst boost::array<float, 38>&[m[K’
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr boost::array<float, 38>& boost::array<float, 38>::operator=(boost::array<float, 38>&&)[m[K’
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::array<float, 38>[m[K’ to ‘[01m[Kboost::array<float, 38>&&[m[K’
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:50:35:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kmavros_msgs::MPC_Inputs_<std::allocator<void> >::_mpc_mo_in_type[m[K’ {aka ‘[01m[Kboost::array<float, 2>[m[K’} and ‘[01m[Kstd::array<float, 2>[m[K’)
+   50 |   ros_msg->mpc_mo_in = mpc_inputs.[01;31m[Kmpc_mo_in[m[K;
+      |                                   [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/message.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/diagnostic_updater/diagnostic_updater.h:42[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:23[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/usr/include/boost/array.hpp:172:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T2> boost::array<T, N>& boost::array<T, N>::operator=(const boost::array<T2, N>&) [with T2 = T2; T = float; long unsigned int N = 2][m[K’
+  172 |         array<T,N>& [01;36m[Koperator[m[K= (const array<T2,N>& rhs) {
+      |                     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/array.hpp:172:21:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:50:35:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<float, 2>[m[K’ is not derived from ‘[01m[Kconst boost::array<T2, 2>[m[K’
+   50 |   ros_msg->mpc_mo_in = mpc_inputs.[01;36m[Kmpc_mo_in[m[K;
+      |                                   [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/message.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/diagnostic_updater/diagnostic_updater.h:42[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:23[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr boost::array<float, 2>& boost::array<float, 2>::operator=(const boost::array<float, 2>&)[m[K’
+   61 |     class [01;36m[Karray[m[K {
+      |           [01;36m[K^~~~~[m[K
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::array<float, 2>[m[K’ to ‘[01m[Kconst boost::array<float, 2>&[m[K’
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr boost::array<float, 2>& boost::array<float, 2>::operator=(boost::array<float, 2>&&)[m[K’
+[01m[K/usr/include/boost/array.hpp:61:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::array<float, 2>[m[K’ to ‘[01m[Kboost::array<float, 2>&&[m[K’
+make[2]: *** [CMakeFiles/mavros_extras.dir/build.make:388: CMakeFiles/mavros_extras.dir/src/plugins/mpc_inputs.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:735: CMakeFiles/mavros_extras.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

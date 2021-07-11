@@ -1,0 +1,8 @@
+prefix=/home/mohzap/catkin_ws/devel/.private/mpc0
+
+Name: mpc0
+Description: Description of mpc0
+Version: 0.0.0
+Cflags: -I/home/mohzap/catkin_ws/src/mpc0/include
+Libs: -L${prefix}/lib -lmpc0
+Requires: roscpp std_msgs

@@ -1,0 +1,13 @@
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:95:32:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kfloat*[m[K’ to type ‘[01m[Kdouble[m[K’
+   95 |         MPC0_U.ref_out=(double)[01;31m[KMPC_ref[m[K;
+      |                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:96:30:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kfloat*[m[K’ to type ‘[01m[Kdouble[m[K’
+   96 |         MPC0_U.moorx=(double)[01;31m[KMPC_mo[m[K;
+      |                              [01;31m[K^~~~~~[m[K
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:102:30:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kreal_T*[m[K’ {aka ‘[01m[Kdouble*[m[K’} to type ‘[01m[Kfloat[m[K’
+  102 |         MPC_mv=(float)MPC0_Y.[01;31m[Kmv[m[K;
+      |                              [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/MPC_handler.dir/build.make:63: CMakeFiles/MPC_handler.dir/src/MPC_handler.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:531: CMakeFiles/MPC_handler.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,65 @@
+In file included from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/utils.h:22[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h:30[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:25[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:[m[K In function ‘[01m[Kbool mavros_msgs::mavlink::convert(const Mavlink&, mavlink::mavlink_message_t&)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:74:63:[m[K [01;35m[Kwarning: [m[Ktaking address of packed member of ‘[01m[Kmavlink::__mavlink_message[m[K’ may result in an unaligned pointer value [[01;35m[K-Waddress-of-packed-member[m[K]
+   74 |  std::copy(rmsg.payload64.begin(), rmsg.payload64.end(), [01;35m[Kmmsg.payload64[m[K);
+      |                                                          [01;35m[K~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/utils.h:22[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h:30[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:25[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:[m[K In function ‘[01m[Kbool mavros_msgs::mavlink::convert(const mavlink_message_t&, mavros_msgs::Mavlink&, uint8_t)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:108:62:[m[K [01;35m[Kwarning: [m[Ktaking address of packed member of ‘[01m[Kmavlink::__mavlink_message[m[K’ may result in an unaligned pointer value [[01;35m[K-Waddress-of-packed-member[m[K]
+  108 |  rmsg.payload64 = mavros_msgs::Mavlink::_payload64_type([01;35m[Kmmsg.payload64[m[K, mmsg.payload64 + payload64_len);
+      |                                                         [01;35m[K~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/9/array:39[m[K,
+                 from [01m[K/usr/include/c++/9/tuple:39[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:20[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+/usr/include/c++/9/bits/stl_algobase.h: In instantiation of ‘[01m[K_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = float*; _OI = boost::array<float, 38>][m[K’:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:441:30:[m[K   required from ‘[01m[K_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = float*; _OI = boost::array<float, 38>][m[K’
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:474:7:[m[K   required from ‘[01m[K_OI std::copy(_II, _II, _OI) [with _II = float*; _OI = boost::array<float, 38>][m[K’
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:52:104:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:396:57:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kvalue_type[m[K’ in ‘[01m[Kstruct std::iterator_traits<boost::array<float, 38> >[m[K’
+  396 |       typedef typename iterator_traits<_OI>::value_type [01;31m[K_ValueTypeO[m[K;
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:401:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kvalue_type[m[K’ in ‘[01m[Kstruct std::iterator_traits<boost::array<float, 38> >[m[K’
+  398 |       const bool __simple = [01;31m[K(__is_trivially_copyable(_ValueTypeI)[m[K
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  399 | [01;31m[K        && __is_pointer<_II>::__value[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  400 | [01;31m[K        && __is_pointer<_OI>::__value[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  401 | [01;31m[K        && __are_same<_ValueTypeI, _ValueTypeO>::__value)[m[K;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+/usr/include/c++/9/bits/stl_algobase.h: In instantiation of ‘[01m[K_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = float*; _OI = boost::array<float, 2>][m[K’:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:441:30:[m[K   required from ‘[01m[K_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = float*; _OI = boost::array<float, 2>][m[K’
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:474:7:[m[K   required from ‘[01m[K_OI std::copy(_II, _II, _OI) [with _II = float*; _OI = boost::array<float, 2>][m[K’
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:53:101:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:396:57:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kvalue_type[m[K’ in ‘[01m[Kstruct std::iterator_traits<boost::array<float, 2> >[m[K’
+  396 |       typedef typename iterator_traits<_OI>::value_type [01;31m[K_ValueTypeO[m[K;
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:401:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kvalue_type[m[K’ in ‘[01m[Kstruct std::iterator_traits<boost::array<float, 2> >[m[K’
+  398 |       const bool __simple = [01;31m[K(__is_trivially_copyable(_ValueTypeI)[m[K
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  399 | [01;31m[K        && __is_pointer<_II>::__value[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  400 | [01;31m[K        && __is_pointer<_OI>::__value[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  401 | [01;31m[K        && __are_same<_ValueTypeI, _ValueTypeO>::__value)[m[K;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/functional:59[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:22[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/usr/include/c++/9/bits/std_function.h:[m[K At global scope:
+[01m[K/usr/include/c++/9/bits/std_function.h:667:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = mavros::plugin::PluginBase::make_handler(void (_C::*)(const mavlink_message_t*, _T&)) [with _C = mavros::extra_plugins::MPCInputsPlugin; _T = mavlink::common::msg::MPC_INPUTS; mavros::plugin::PluginBase::HandlerInfo = std::tuple<unsigned int, const char*, long unsigned int, std::function<void(const mavlink::__mavlink_message*, mavconn::Framing)> >; mavlink::mavlink_message_t = mavlink::__mavlink_message]::<lambda(const mavlink_message_t*, mavconn::Framing)>; <template-parameter-2-2> = void; <template-parameter-2-3> = void; _Res = void; _ArgTypes = {const mavlink::__mavlink_message*, mavconn::Framing}][m[K’, declared using local type ‘[01m[Kmavros::plugin::PluginBase::make_handler(void (_C::*)(const mavlink_message_t*, _T&)) [with _C = mavros::extra_plugins::MPCInputsPlugin; _T = mavlink::common::msg::MPC_INPUTS; mavros::plugin::PluginBase::HandlerInfo = std::tuple<unsigned int, const char*, long unsigned int, std::function<void(const mavlink::__mavlink_message*, mavconn::Framing)> >; mavlink::mavlink_message_t = mavlink::__mavlink_message]::<lambda(const mavlink_message_t*, mavconn::Framing)>[m[K’, is used but never defined [[01;31m[K-fpermissive[m[K]
+  667 |       [01;31m[Kfunction<_Res(_ArgTypes...)>[m[K::
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mavros_extras.dir/build.make:388: CMakeFiles/mavros_extras.dir/src/plugins/mpc_inputs.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:735: CMakeFiles/mavros_extras.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,16 @@
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:93:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kmpc_outs[m[K’
+   93 |         mpc_outs.header=mpc_ins.header
+      |                                       [01;31m[K^[m[K
+      |                                       [32m[K;[m[K
+   94 |         [32m[Kmpc_outs[m[K.mpc_mv_out[0]=MPC_mv[0];mpc_outs.mpc_mv_out[1]=MPC_mv[1];
+      |         [32m[K~~~~~~~~[m[K                       
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:159:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kmpc_outs[m[K’
+  159 |         mpc_outs.header=mpc_ins.header
+      |                                       [01;31m[K^[m[K
+      |                                       [32m[K;[m[K
+  160 |         [32m[Kmpc_outs[m[K.mpc_mv_out[0]=MPC_mv[0];mpc_outs.mpc_mv_out[1]=MPC_mv[1];
+      |         [32m[K~~~~~~~~[m[K                       
+make[2]: *** [CMakeFiles/MPC_handler.dir/build.make:63: CMakeFiles/MPC_handler.dir/src/MPC_handler.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:531: CMakeFiles/MPC_handler.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

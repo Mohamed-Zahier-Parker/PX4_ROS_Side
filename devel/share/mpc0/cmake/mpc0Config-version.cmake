@@ -1,0 +1,1 @@
+/home/mohzap/catkin_ws/devel/.private/mpc0/share/mpc0/cmake/mpc0Config-version.cmake

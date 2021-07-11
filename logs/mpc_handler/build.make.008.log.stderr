@@ -1,0 +1,13 @@
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:95:20:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+   95 |         ExtU_MPC0_T[01;31m[K.[m[Kref_out=MPC_ref;
+      |                    [01;31m[K^[m[K
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:96:20:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+   96 |         ExtU_MPC0_T[01;31m[K.[m[Kref_out=MPC_ref;
+      |                    [01;31m[K^[m[K
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:102:27:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+  102 |         MPC_mv=ExtY_MPC0_T[01;31m[K.[m[Kmv;
+      |                           [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/MPC_handler.dir/build.make:63: CMakeFiles/MPC_handler.dir/src/MPC_handler.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:531: CMakeFiles/MPC_handler.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

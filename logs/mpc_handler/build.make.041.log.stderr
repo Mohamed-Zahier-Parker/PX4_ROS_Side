@@ -1,0 +1,25 @@
+In file included from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:1[m[K:
+/usr/include/c++/9/bits/stl_algobase.h: In instantiation of ‘[01m[K_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = double*; _OI = boost::array<float, 2>][m[K’:
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:441:30:[m[K   required from ‘[01m[K_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = double*; _OI = boost::array<float, 2>][m[K’
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:474:7:[m[K   required from ‘[01m[K_OI std::copy(_II, _II, _OI) [with _II = double*; _OI = boost::array<float, 2>][m[K’
+[01m[K/home/mohzap/catkin_ws/src/mpc_handler/src/MPC_handler.cpp:80:60:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:396:57:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kvalue_type[m[K’ in ‘[01m[Kstruct std::iterator_traits<boost::array<float, 2> >[m[K’
+  396 |       typedef typename iterator_traits<_OI>::value_type [01;31m[K_ValueTypeO[m[K;
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_algobase.h:401:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kvalue_type[m[K’ in ‘[01m[Kstruct std::iterator_traits<boost::array<float, 2> >[m[K’
+  398 |       const bool __simple = [01;31m[K(__is_trivially_copyable(_ValueTypeI)[m[K
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  399 | [01;31m[K        && __is_pointer<_II>::__value[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  400 | [01;31m[K        && __is_pointer<_OI>::__value[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  401 | [01;31m[K        && __are_same<_ValueTypeI, _ValueTypeO>::__value)[m[K;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/MPC_handler.dir/build.make:63: CMakeFiles/MPC_handler.dir/src/MPC_handler.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:531: CMakeFiles/MPC_handler.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

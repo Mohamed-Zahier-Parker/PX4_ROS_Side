@@ -1,0 +1,1 @@
+/home/mohzap/catkin_ws/devel/.private/mpc0/lib/pkgconfig/mpc0.pc

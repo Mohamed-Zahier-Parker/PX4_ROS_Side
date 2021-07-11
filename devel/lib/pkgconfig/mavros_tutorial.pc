@@ -1,0 +1,1 @@
+/home/mohzap/catkin_ws/devel/.private/mavros_tutorial/lib/pkgconfig/mavros_tutorial.pc

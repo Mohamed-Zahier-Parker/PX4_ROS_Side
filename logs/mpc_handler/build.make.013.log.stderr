@@ -1,0 +1,12 @@
+/usr/bin/ld: CMakeFiles/MPC_handler.dir/src/MPC_handler.cpp.o: in function `main':
+MPC_handler.cpp:(.text+0x165): undefined reference to `MPC0_initialize'
+/usr/bin/ld: MPC_handler.cpp:(.text+0x1d5): undefined reference to `MPC0_U'
+/usr/bin/ld: MPC_handler.cpp:(.text+0x1f2): undefined reference to `MPC0_U'
+/usr/bin/ld: MPC_handler.cpp:(.text+0x206): undefined reference to `MPC0_step'
+/usr/bin/ld: MPC_handler.cpp:(.text+0x20d): undefined reference to `MPC0_Y'
+/usr/bin/ld: MPC_handler.cpp:(.text+0x21e): undefined reference to `MPC0_Y'
+/usr/bin/ld: MPC_handler.cpp:(.text+0x43b): undefined reference to `MPC0_terminate'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/MPC_handler.dir/build.make:118: /home/mohzap/catkin_ws/devel/.private/mpc_handler/lib/mpc_handler/MPC_handler] Error 1
+make[1]: *** [CMakeFiles/Makefile2:531: CMakeFiles/MPC_handler.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

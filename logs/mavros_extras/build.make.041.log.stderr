@@ -1,0 +1,26 @@
+In file included from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/utils.h:22[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h:30[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:25[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:[m[K In function ‘[01m[Kbool mavros_msgs::mavlink::convert(const Mavlink&, mavlink::mavlink_message_t&)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:74:63:[m[K [01;35m[Kwarning: [m[Ktaking address of packed member of ‘[01m[Kmavlink::__mavlink_message[m[K’ may result in an unaligned pointer value [[01;35m[K-Waddress-of-packed-member[m[K]
+   74 |  std::copy(rmsg.payload64.begin(), rmsg.payload64.end(), [01;35m[Kmmsg.payload64[m[K);
+      |                                                          [01;35m[K~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/utils.h:22[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h:30[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h:25[m[K,
+                 from [01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:2[m[K:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:[m[K In function ‘[01m[Kbool mavros_msgs::mavlink::convert(const mavlink_message_t&, mavros_msgs::Mavlink&, uint8_t)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h:108:62:[m[K [01;35m[Kwarning: [m[Ktaking address of packed member of ‘[01m[Kmavlink::__mavlink_message[m[K’ may result in an unaligned pointer value [[01;35m[K-Waddress-of-packed-member[m[K]
+  108 |  rmsg.payload64 = mavros_msgs::Mavlink::_payload64_type([01;35m[Kmmsg.payload64[m[K, mmsg.payload64 + payload64_len);
+      |                                                         [01;35m[K~~~~~^~~~~~~~~[m[K
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:[m[K In member function ‘[01m[Kvoid mavros::extra_plugins::MPCInputsPlugin::handle_mpc_inputs(const mavlink_message_t*, mavlink::common::msg::MPC_INPUTS&)[m[K’:
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:52:93:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass boost::shared_ptr<mavros_msgs::MPC_Inputs_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kmpc_ref_in[m[K’
+   52 |         std::copy(std::begin(mpc_inputs.mpc_ref_in),std::end(mpc_inputs.mpc_ref_in),ros_msg.[01;31m[Kmpc_ref_in[m[K);
+      |                                                                                             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mohzap/catkin_ws/src/mavros/mavros_extras/src/plugins/mpc_inputs.cpp:53:91:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass boost::shared_ptr<mavros_msgs::MPC_Inputs_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kmpc_mo_in[m[K’
+   53 |         std::copy(std::begin(mpc_inputs.mpc_mo_in),std::end(mpc_inputs.mpc_mo_in),ros_msg.[01;31m[Kmpc_mo_in[m[K);
+      |                                                                                           [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mavros_extras.dir/build.make:388: CMakeFiles/mavros_extras.dir/src/plugins/mpc_inputs.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:735: CMakeFiles/mavros_extras.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
